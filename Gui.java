@@ -48,7 +48,7 @@ public class Gui {
                     ArrayList<ResponseModel> DaftarResponseModel = new ArrayList<>();
                     for(int i = 0; i < responeseJSON.length(); i++){
                         ResponseModel resModel = new ResponseModel();
-                        JSONObject myJSONObject = responeseJSON.getJSONObject(i);
+                        JSONObject myJSONObject = ResponseJSON.getJSONObject(i);
                         resModel.set_message(myJSONObject.getString("message"));
                         resModel.set_status(myJSONObject.getString("status"));
                         resModel.set_comment(myJSONObject.getString("comment"));
